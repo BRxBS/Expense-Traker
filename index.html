@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Traker</title>
+</head>
+<body>
+    
+    <h1>Expense Traker</h1>
+    <p>Add A New Item:</p>
+    
+    <div>
+        <label for="name" id="labelName">Name</label>
+        <input type="text" id="ProductName"> <br> <br>
+        <label for="date" id="labelDate">Date</label>
+        <input type="text" id="TheDate">
+        <label for="amount">Amount</label> 
+        <input type="text" id="theAmount"> <br> <br>
+        
+        <input type="submit" value="Add Expense" onclick="action()">
+        <input type="button" value="edit" onclick="Edit()">
+        <input type="button" value="Clear" onclick="clar()">
+        <button onclick="clear()">Clear</button>
+    </div>
+    
+    <div>
+        <table id="TheTable">
+            
+            <tr>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Amount</th>
+            </tr>
+            <tr>
+                <td>Hello</td>
+                <td>Hello</td>
+                <td>Hello</td>
+            </tr>
+        </table>
+        
+        
+    </div>
+
+    <script src="script.js">
+       
+    </script>
+</body>
+</html>
