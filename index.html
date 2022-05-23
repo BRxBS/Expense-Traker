@@ -7,42 +7,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Traker</title>
 </head>
-<body>
+<body class="grid-container">
     
-    <h1>Expense Traker</h1>
-    <p>Add A New Item:</p>
-    
-    <div>
-        <label for="name" id="labelName">Name</label>
-        <input type="text" id="ProductName"> <br> <br>
-        <label for="date" id="labelDate">Date</label>
-        <input type="text" id="TheDate">
-        <label for="amount">Amount</label> 
+
+        <div>
+           
+        </div>
+
+        <div class="header">
+            <h1>Expense Traker</h1>
+            <p>Add A New Item:</p>
+
+        <label for="name" id="labelName">Name:</label>
+        <input type="text" id="ProductName"> <br> 
+        <label for="date" id="labelDate">Date:</label>
+        <input type="date"  id="TheDate">
+        <label for="amount" id="labelAmount">Amount:</label> 
         <input type="text" id="theAmount"> <br> <br>
         
-        <input type="submit" value="Add Expense" onclick="action()">
-        <input type="button" value="edit" onclick="Edit()">
-        <input type="button" value="Clear" onclick="clar()">
-        <button onclick="clear()">Clear</button>
-    </div>
+        <input type="submit" value="Add Expense"  class="ButAdd" onclick="action()">
+        <input type="button" value="Edit" class="ButEdit" onclick="Edit()">
+        <input type="button" value="Clear" class="ButClear" onclick="clar()">
+        <input type="button" value="Delete" class="deleteBut" onclick="ButDelete()">
+        </div>
+        
+        <div>
+       
+        </div>  
+        <div >
+
+
+        </div>
+        <div class="aTable">
+
+
+            <table id="TheTable" style="width: 100%">
+                
+                <tr class="TableHeader">
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                </tr>
+                
+            </table>
+
+        </div>
+        <div>
+
+        </div>  
+
+      
+      
     
-    <div>
-        <table id="TheTable">
-            
-            <tr>
-                <th>Name</th>
-                <th>Date</th>
-                <th>Amount</th>
-            </tr>
-            <tr>
-                <td>Hello</td>
-                <td>Hello</td>
-                <td>Hello</td>
-            </tr>
-        </table>
-        
-        
-    </div>
+
 
     <script src="script.js">
        

@@ -1,5 +1,138 @@
 
-    table, th, td {
-        border: 1px solid black;
-        border-collapse:collapse;
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-rows: 2fr 3fr;
+        gap: 10px;
+       
+        padding: 10px;
+      }
+      
+      .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        
+        padding: 20px 0;
+        font-size: 30px;
+      }
+
+      .aTable{
+        grid-area: 2 / 2 / 3 / 3;
+      }
+      table {
+        
+          justify-content: center;
+          border-spacing: 3px;
+          border-collapse: collapse;
+      }
+    
+     th {
+        border-right:  1px solid rgb(128, 131, 146);
+        border-bottom: 1px solid rgb(128, 131, 146);
+        
+       
+        
+    }
+    
+    tr{
+        text-align: left;
+        border-right:  1px solid rgb(128, 131, 146);
+        border-bottom: 1px solid rgb(128, 131, 146);
+        cursor: pointer;
+        
+            
+          
+    }
+    tr:hover {background-color: #D6EEEE;}
+
+    h1{
+        font-size: 40px;
+        margin-top: 0%;
+        text-align: center;
+    }
+    p{
+        font-size: 10px sans-serif;
+        color: #11D0BC;
+        text-align: center;
+    
+    }
+    #labelName{
+        margin-left: 15%;
+        font-size: 20px ;
+        font-style:normal;
+    }
+    #ProductName{
+       
+       width: 500px;
+       height: 20px;
+       
+    }
+    #labelDate{
+        margin-left: 15%;
+        font-size: 20px ;
+        font-style:normal;
+    }
+    #TheDate{
+        width: 200px;
+        height: 20px;
+        
+    }
+    #labelAmount{
+        font-size: 25px ;
+        font-style:normal;
+
+    }
+    #theAmount{
+        width: 200px;
+        height: 20px;
+    }
+    .ButAdd{
+        background-color: #419e45; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 14px;
+        margin-left: 25%;
+        cursor: pointer;
+
+    }
+    .ButAdd:hover{
+        background-color: #0b680e; /* Green */
+        color: white;
+    }
+    .ButEdit{
+        background-color: #419e45; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 14px;
+        margin-left: 5%;
+        cursor: pointer;
+    }
+    .ButEdit:hover{
+        background-color: #0b680e; /* Green */
+        color: white;
+    }
+    .ButClear{
+        background-color: #419e45; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 14px;
+        margin-left: 5%;
+        cursor: pointer;
+    }
+    .ButClear:hover{
+        background-color: #0b680e; /* Green */
+        color: white;
+    }
+
+    .deleteBut{
+        background-color: #419e45; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 14px;
+        margin-left: 5%;
+        cursor: pointer;
+    }
+    .deleteBut:hover{
+        background-color: #0b680e; /* Green */
+        color: white;
     }
